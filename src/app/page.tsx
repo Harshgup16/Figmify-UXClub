@@ -12,7 +12,9 @@ export default function Home() {
       <div className="glow-box relative">
         
         <div className="absolute top-4 left-4 md:top-8 md:left-8 z-50">
-          <h1 className="text-4xl md:text-6xl lg:text-8xl text-white font-bold">Figmify</h1>
+          <h1 className="text-4xl md:text-6xl lg:text-8xl text-white font-bold">
+            Design<span style={{ color: '#ff6b35' }}>2</span>code
+          </h1>
         </div>
         <div className="absolute inset-0 flex items-center justify-center z-50">
           <div className="inline-flex rounded-full bg-black p-1 w-fit">
@@ -55,7 +57,7 @@ export default function Home() {
             </button>
             {/* <button className="bg-white text-black px-4 py-2 md:px-6 md:py-3 rounded-full text-base md:text-lg font-semibold flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer hover:bg-gray-100 transition-colors"> */}
             <button className="bg-white text-black px-4 py-2 md:px-6 md:py-3 rounded-full text-base md:text-lg font-semibold flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer hover:bg-gray-100 transition-colors">
-              FIGMIFY <span>→</span>
+              <span>DESIGN<span style={{color:'#ff6b35'}}>2</span>CODE</span> <span>→</span>
             </button>
           </div>
         </div>
