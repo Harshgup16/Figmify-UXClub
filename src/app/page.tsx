@@ -1,12 +1,28 @@
+"use client";
+
 import Image from "next/image";
 
 export default function Home() {
+  const scrollToContent = () => {
+    document.getElementById('content-section')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="min-h-screen">
       <div className="glow-box relative">
         
         <div className="absolute top-4 left-4 md:top-8 md:left-8 z-50">
           <h1 className="text-4xl md:text-6xl lg:text-8xl text-white font-bold">Figmify</h1>
+        </div>
+        <div className="absolute inset-0 flex items-center justify-center z-50">
+          <div className="inline-flex rounded-full bg-black p-1 w-fit">
+            <button className="bg-black text-white px-4 py-2 md:px-6 md:py-3 rounded-full text-base md:text-lg font-semibold">
+              NPM INSTALL
+            </button>
+            <button onClick={scrollToContent} className="bg-white text-black px-4 py-2 md:px-6 md:py-3 rounded-full text-base md:text-lg font-semibold flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer hover:bg-gray-100 transition-colors">
+              GET START <span>→</span>
+            </button>
+          </div>
         </div>
 
         <div className="absolute bottom-4 left-4 md:bottom-8 md:left-8 z-50 flex items-center gap-2 md:gap-4">
@@ -22,8 +38,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row lg:justify-between items-stretch">
-        {/* Left Side - Text Content */}
+      <div id="content-section" className="flex flex-col lg:flex-row lg:justify-between items-stretch">
         <div className="flex flex-col justify-center max-w-2xl px-4 py-6 md:px-8 md:py-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4 md:mb-6">
             Make yourself usable with 48hrs hackathon
@@ -34,11 +49,12 @@ export default function Home() {
             show up, team up, and code. This is for the coders who want to flex their 
             CSS skills and the designers who want to see their vision built right.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-black text-white px-6 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-semibold">
+          <div className="inline-flex rounded-full bg-black p-1 w-fit">
+            <button className="bg-black text-white px-4 py-2 md:px-6 md:py-3 rounded-full text-base md:text-lg font-semibold whitespace-nowrap">
               NPM INSTALL
             </button>
-            <button className="bg-white text-black border-2 border-black px-6 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-semibold flex items-center justify-center gap-2">
+            {/* <button className="bg-white text-black px-4 py-2 md:px-6 md:py-3 rounded-full text-base md:text-lg font-semibold flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer hover:bg-gray-100 transition-colors"> */}
+            <button className="bg-white text-black px-4 py-2 md:px-6 md:py-3 rounded-full text-base md:text-lg font-semibold flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer hover:bg-gray-100 transition-colors">
               FIGMIFY <span>→</span>
             </button>
           </div>
@@ -50,7 +66,7 @@ export default function Home() {
           <div className="absolute top-6 left-6 md:top-8 md:left-8">
             <Image src="/ux design club 1.svg" alt="UX Design Club" width={120} height={40} />
           </div>
-          <div className="absolute bottom-6 left-6 right-6 md:bottom-8 md:left-8 md:right-8">
+          <div className="absolute bottom-6 left-6 right-6 md:bottom-8 md:left-8 md:right-8 lg:bottom-16">
             <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2">Registration</h3>
             <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">Open</h3>
           </div>
