@@ -1,5 +1,6 @@
 "use client";
 
+import EvaluationCommittee from "@/components/EvaluationCommittee";
 import Image from "next/image";
 
 export default function Home() {
@@ -75,6 +76,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+       <EvaluationCommittee />
     </div>
   );
 }
