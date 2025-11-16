@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import CircularText from '../components/circular_Text';
 
 export default function Home() {
   const scrollToContent = () => {
@@ -62,13 +63,21 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative overflow-hidden w-full lg:w-[450px] min-h-[500px] lg:min-h-[700px] rounded-t-3xl lg:rounded-l-3xl lg:rounded-t-none" style={{
+        <div className="relative overflow-hidden w-full lg:w-[450px] min-h-[500px] lg:min-h-[700px] rounded-t-3xl lg:rounded-t-3xl lg:rounded-b-3xl m-4 lg:m-6" style={{
           background: 'linear-gradient(135deg, #ff6b35 0%, #ff8c42 50%, #ffa600 100%)'
         }}>
           <div className="absolute top-6 left-6 md:top-8 md:left-8">
             <Image src="/ux design club 1.svg" alt="UX Design Club" width={120} height={40} />
           </div>
-                    <div className="absolute bottom-6 left-6 right-6 md:bottom-8 md:left-8 md:right-8 lg:bottom-16">
+          <div className="absolute inset-0 flex items-center justify-center">
+            <CircularText
+              text="REACT*BITS*COMPONENTS*"
+              onHover="speedUp"
+              spinDuration={20}
+              className="custom-class w-32 h-32"
+            />
+          </div>
+          <div className="absolute bottom-6 left-6 right-6 md:bottom-8 md:left-8 md:right-8 lg:bottom-16">
             <button className="bg-white/20 backdrop-blur-md text-white px-5 py-2.5 md:px-6 md:py-3 rounded-full text-xl md:text-xl lg:text-2xl font-bold cursor-pointer hover:bg-white/30 transition-all whitespace-nowrap border border-white/30 flex items-center gap-2">
               Registration Open <span className="text-2xl md:text-3xl">→</span>
             </button>
