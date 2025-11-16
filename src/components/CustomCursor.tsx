@@ -5,16 +5,16 @@ import './CustomCursor.css';
 
 const CustomCursor = () => {
   const cursorRef = useRef<HTMLDivElement>(null);
-  const isTouchDeviceRef = useRef(false);
-  const isHoveredRef = useRef(false);
 
   useEffect(() => {
     // Check if device is touch-enabled
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-    isTouchDeviceRef.current = isTouchDevice;
     
-    // If it's a touch device, don't show the cursor
+    // If it's a touch device, hide the cursor
     if (isTouchDevice) {
+      if (cursorRef.current) {
+        cursorRef.current.style.display = 'none';
+      }
       return;
     }
 
@@ -39,10 +39,8 @@ const CustomCursor = () => {
           target.tagName === 'INPUT' || 
           target.tagName === 'TEXTAREA' || 
           target.tagName === 'SELECT') {
-        isHoveredRef.current = true;
         cursor.classList.add('hovered');
       } else {
-        isHoveredRef.current = false;
         cursor.classList.remove('hovered');
       }
     };
@@ -73,11 +71,6 @@ const CustomCursor = () => {
       window.removeEventListener('touchstart', handleTouchStart);
     };
   }, []);
-
-  // Don't render on touch devices
-  if (typeof window !== 'undefined' && ('ontouchstart' in window || navigator.maxTouchPoints > 0)) {
-    return null;
-  }
 
   return (
     <div 
