@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import CircularText from '../components/circular_Text';
+import ScrollDown from '../components/ScrollDown';
+import { GoogleGeminiEffectDemo } from '../components/GoogleGeminiEffectDemo';
 
 export default function Home() {
   const scrollToContent = () => {
@@ -40,11 +42,16 @@ export default function Home() {
           <Image src="/VITB Logo (1) 1.svg" alt="VITB Logo" width={100} height={100} className="md:w-[150px] md:h-[150px]" />
         </div>
       </div>
+      
+      {/* Scroll Down Indicator - Positioned over content */}
+      <div className="relative -mt-16 z-[100] flex justify-center">
+        <ScrollDown />
+      </div>
 
       <div id="content-section" className="flex flex-col lg:flex-row lg:justify-between items-stretch">
         <div className="flex flex-col justify-center max-w-2xl px-4 py-6 md:px-8 md:py-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4 md:mb-6">
-            Make yourself usable with 48hrs hackathon
+            Register for Hackathon
           </h2>
           <p className="text-gray-700 text-base md:text-lg mb-6 md:mb-8 leading-relaxed">
             We&apos;re hosting a 2-day sprint to find the best front-end champs on campus. 
@@ -56,9 +63,8 @@ export default function Home() {
             <button className="bg-black text-white px-4 py-2 md:px-6 md:py-3 rounded-full text-base md:text-lg font-semibold whitespace-nowrap">
               NPM INSTALL
             </button>
-            {/* <button className="bg-white text-black px-4 py-2 md:px-6 md:py-3 rounded-full text-base md:text-lg font-semibold flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer hover:bg-gray-100 transition-colors"> */}
             <button className="bg-white text-black px-4 py-2 md:px-6 md:py-3 rounded-full text-base md:text-lg font-semibold flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer hover:bg-gray-100 transition-colors">
-              <span>DESIGN<span style={{color:'#ff6b35'}}>2</span>CODE</span> <span>→</span>
+              Join now! <span>→</span>
             </button>
           </div>
         </div>
@@ -71,7 +77,7 @@ export default function Home() {
           </div>
           <div className="absolute inset-0 flex items-center justify-center">
             <CircularText
-              text="REACT*BITS*COMPONENTS*"
+              text="DESIGN*CODE*PUBLISH*"
               onHover="speedUp"
               spinDuration={20}
               className="custom-class w-32 h-32"
@@ -83,6 +89,11 @@ export default function Home() {
             </button>
           </div>
         </div>
+      </div>
+      
+      {/* Google Gemini Effect */}
+      <div className="w-full">
+        <GoogleGeminiEffectDemo />
       </div>
     </div>
   );
