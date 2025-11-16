@@ -66,9 +66,10 @@ export default function Home() {
           <div className="absolute top-6 left-6 md:top-8 md:left-8">
             <Image src="/ux design club 1.svg" alt="UX Design Club" width={120} height={40} />
           </div>
-          <div className="absolute bottom-6 left-6 right-6 md:bottom-8 md:left-8 md:right-8 lg:bottom-16">
-            <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2">Registration</h3>
-            <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">Open</h3>
+                    <div className="absolute bottom-6 left-6 right-6 md:bottom-8 md:left-8 md:right-8 lg:bottom-16">
+            <button className="bg-white/20 backdrop-blur-md text-white px-5 py-2.5 md:px-6 md:py-3 rounded-full text-xl md:text-xl lg:text-2xl font-bold cursor-pointer hover:bg-white/30 transition-all whitespace-nowrap border border-white/30 flex items-center gap-2">
+              Registration Open <span className="text-2xl md:text-3xl">→</span>
+            </button>
           </div>
         </div>
       </div>
