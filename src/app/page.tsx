@@ -11,7 +11,7 @@ export default function Home() {
     <div className="min-h-screen">
       <div className="glow-box relative">
         
-        <div className="absolute top-4 left-4 md:top-8 md:left-8 z-50">
+        <div className="absolute top-20 left-4 md:top-24 md:left-8 z-50">
           <h1 className="text-4xl md:text-6xl lg:text-8xl text-white font-bold">
             Design<span style={{ color: '#ff6b35' }}>2</span>code
           </h1>
@@ -30,7 +30,7 @@ export default function Home() {
         <div className="absolute bottom-4 left-4 md:bottom-8 md:left-8 z-50 flex items-center gap-2 md:gap-4">
           <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-white"></div>
           <div>
-            <p className="text-white text-sm md:text-xl">Let's build & code</p>
+            <p className="text-white text-sm md:text-xl">Let&apos;s build &amp; code</p>
             <p className="text-white text-sm md:text-xl">beautiful designs together.</p>
           </div>
         </div>
@@ -46,8 +46,8 @@ export default function Home() {
             Make yourself usable with 48hrs hackathon
           </h2>
           <p className="text-gray-700 text-base md:text-lg mb-6 md:mb-8 leading-relaxed">
-            We're hosting a 2-day sprint to find the best front-end champs on campus. 
-            Bring up the designs (must be beautiful) and the food (it's free). You just 
+            We&apos;re hosting a 2-day sprint to find the best front-end champs on campus. 
+            Bring up the designs (must be beautiful) and the food (it&apos;s free). You just 
             show up, team up, and code. This is for the coders who want to flex their 
             CSS skills and the designers who want to see their vision built right.
           </p>
