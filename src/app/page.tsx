@@ -48,9 +48,7 @@ export default function Home() {
           background: 'linear-gradient(135deg, #ff6b35 0%, #ff8c42 50%, #ffa600 100%)'
         }}>
           <div className="absolute top-6 left-6 md:top-8 md:left-8">
-            <div className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg">
-              <span className="text-black font-bold text-sm md:text-base">UX DESIGN CLUB</span>
-            </div>
+            <Image src="/ux design club 1.svg" alt="UX Design Club" width={120} height={40} />
           </div>
           <div className="absolute bottom-6 left-6 right-6 md:bottom-8 md:left-8 md:right-8">
             <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2">Registration</h3>
