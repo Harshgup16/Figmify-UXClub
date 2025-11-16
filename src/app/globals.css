@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+/* Import Lenis CSS for smooth scrolling */
+@import "lenis/dist/lenis.css";
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .glow-box {
   width: calc(100vw - 20px);
   height: calc(100vh - 20px);
