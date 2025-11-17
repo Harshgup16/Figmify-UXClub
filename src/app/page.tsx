@@ -1,10 +1,16 @@
 "use client";
 
+import CircularText from "@/components/circular_Text";
+import EvaluationCommittee from "@/components/EvaluationCommittee";
 import Image from "next/image";
 
 export default function Home() {
   const scrollToContent = () => {
     document.getElementById('content-section')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToCommittee = () => {
+    document.getElementById('committee-section')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -68,12 +74,23 @@ export default function Home() {
           <div className="absolute top-6 left-6 md:top-8 md:left-8">
             <Image src="/ux design club 1.svg" alt="UX Design Club" width={120} height={40} />
           </div>
-                    <div className="absolute bottom-6 left-6 right-6 md:bottom-8 md:left-8 md:right-8 lg:bottom-16">
-            <button className="bg-white/20 backdrop-blur-md text-white px-5 py-2.5 md:px-6 md:py-3 rounded-full text-xl md:text-xl lg:text-2xl font-bold cursor-pointer hover:bg-white/30 transition-all whitespace-nowrap border border-white/30 flex items-center gap-2">
+          <div className="absolute inset-0 flex items-center justify-center">
+            <CircularText
+              text="DESIGN*CODE*PUBLISH*"
+              onHover="speedUp"
+              spinDuration={20}
+              className="custom-class w-32 h-32"
+            />
+          </div>
+          <div className="absolute bottom-6 left-6 right-6 md:bottom-8 md:left-8 md:right-8 lg:bottom-16">
+            <button onClick={scrollToCommittee} className="bg-white/20 backdrop-blur-md text-white px-5 py-2.5 md:px-6 md:py-3 rounded-full text-xl md:text-xl lg:text-2xl font-bold cursor-pointer hover:bg-white/30 transition-all whitespace-nowrap border border-white/30 flex items-center gap-2">
               Registration Open <span className="text-2xl md:text-3xl">→</span>
             </button>
           </div>
         </div>
+      </div>
+      <div id="committee-section">
+        <EvaluationCommittee />
       </div>
     </div>
   );
