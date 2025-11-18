@@ -39,35 +39,37 @@ export default function EventDetailsSection() {
               </p>
 
               <div className="flex flex-wrap gap-2 mb-5">
-                <button className="bg-black text-white px-4 py-2 md:px-5 rounded-full text-sm font-semibold whitespace-nowrap">
-                  NPM INSTALL
-                </button>
-                <button className="bg-white border-2 border-black text-black px-4 py-2 md:px-5 rounded-full text-sm font-semibold flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer hover:bg-gray-100 transition-colors">
-                  FIGMIFY: Design-to-Code Hackathon <span>→</span>
-                </button>
+                <div className="inline-flex rounded-full bg-black p-1.5 w-fit">
+                  <button className="bg-black text-white px-4 py-1 md:px-5 md:py-1.5 rounded-full text-base md:text-lg font-semibold">
+                    NPM INSTALL
+                  </button>
+                  <button className="bg-white text-black px-4 py-1 md:px-5 md:py-1.5 rounded-full text-base md:text-lg font-semibold flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer hover:bg-gray-100 transition-colors">
+                    <span className="hidden md:inline">FIGMIFY: Design-to-Code Hackathon</span> <span>→</span>
+                  </button>
+                </div>
               </div>
 
               <div className="space-y-3">
-                <div className="border-2 border-black rounded-2xl p-4 bg-white">
+                <div className="border-2 border-black rounded-2xl p-4 bg-gray-100">
                   <p className="text-black text-sm font-medium text-center">
                     Teams of 2-4. No lone wolves (it&apos;s more fun with friends)
                   </p>
                 </div>
 
-                <div className="border-2 border-black rounded-2xl p-4 bg-white">
+                <div className="border-2 border-black rounded-2xl p-4 bg-gray-100">
                   <p className="text-black text-sm font-medium text-center">
                     Free entry →
                   </p>
                 </div>
 
-                <div className="border-2 border-black rounded-2xl p-4 bg-gray-50">
+                <div className="border-2 border-black rounded-2xl p-4 bg-gray-100">
                   <p className="text-black text-xs font-medium text-center leading-relaxed">
                     Day 1: 8:00AM - 6:00PM (Saturday, 22/11/2025)<br />
                     Day 2: 10:00AM - 6:00PM (Sunday, 23/11/2025)
                   </p>
                 </div>
 
-                <div className="border-2 border-black rounded-2xl p-4 bg-white">
+                <div className="border-2 border-black rounded-2xl p-4 bg-gray-100">
                   <p className="text-black text-sm font-medium text-center">
                     See the 48-hour sprint plan &amp; rules →
                   </p>
