@@ -1,15 +1,14 @@
 "use client";
+import { i } from 'framer-motion/client';
 import CommitteeMember from './CommitteeMember';
 
 const committeeMembers = [
-  { id: 1, name: 'Tanishk Kapoor', role: 'President', contactType: 'email' as const },
-  { id: 2, name: 'Tanishk Kapoor', role: 'Vice President', contactType: 'email' as const },
-  { id: 3, name: 'Tanishk Kapoor', role: 'General secretary', contactType: 'email' as const },
-  { id: 4, name: 'Tanishk Kapoor', role: 'Design lead', contactType: 'email' as const },
-  { id: 5, name: 'Tanishk Kapoor', role: 'Tech lead', contactType: 'email' as const },
-  { id: 6, name: 'Tanishk Kapoor', role: 'Design co-lead', contactType: 'email' as const },
-  { id: 7, name: 'Tanishk Kapoor', role: 'Tech co-lead', contactType: 'email' as const },
-  { id: 8, name: 'Tanishk Kapoor', role: 'President', contactType: 'linkedin' as const },
+  { id: 1, name: 'Dr. T Venkateswara Rao', role: 'Faculty Co-ordinator', contactType: 'email' as const },
+  { id: 2, name: 'Tanishk Kapoor', role: 'President', contactType: 'email' as const , imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763376310/D56_0101_-_Copy_sbe7g9.png' },
+  { id: 3, name: 'Sujal Singh', role: 'Vice President', contactType: 'email' as const , imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763482021/Untitled_design__1_-removebg-preview_nhpkbh.png' },
+  { id: 4, name: 'Sonakshi Saxena', role: 'General secretary', contactType: 'email' as const, imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763376454/IMG-20251117-WA0020_q9ewge.png' },
+  { id: 5, name: 'Yeshu Agarwal', role: 'Tech Lead', contactType: 'email' as const, imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763375023/img_yeshu_v41boo.png' },
+  { id: 6, name: 'Nitin Vishwakarma', role: 'Design Lead', contactType: 'email' as const , imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763377075/Untitled_design-removebg-preview_lpfvlu.png' },
 ];
 
 export default function EvaluationCommittee() {
@@ -40,6 +39,7 @@ export default function EvaluationCommittee() {
               name={member.name}
               role={member.role}
               contactType={member.contactType}
+              imageUrl={member.imageUrl}
             />
           ))}
         </div>
