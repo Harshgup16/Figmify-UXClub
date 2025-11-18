@@ -7,16 +7,16 @@ export default function EventDetailsSection() {
       <div className="w-full px-4">
         {/* Single container with black border wrapping both image and content - full width */}
         <div className="border-4 border-black rounded-3xl p-6 md:p-8 lg:p-10 shadow-lg">
-          {/* Flex layout for image on left and content on right with proper gap */}
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
-            {/* Left side - image with border - left column */}
-            <div className="lg:w-5/12 flex items-center justify-center lg:justify-start">
-              <div className="w-full h-[300px] md:h-[400px] lg:h-[450px] flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
+          {/* Flex layout for image on left and content on right */}
+          <div className="flex flex-col lg:flex-row gap-8">
+            {/* Left side - image with border - aligned to top left */}
+            <div className="lg:w-5/12 flex items-start justify-start">
+              <div className="w-full h-[300px] md:h-[400px] lg:h-[450px] flex items-start justify-start bg-gray-100 rounded-2xl overflow-hidden">
                 {/* Replace this with your actual image component */}
-                <div className="text-center p-4">
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mx-auto mb-4" />
-                  <p className="text-gray-500 font-medium">Event Image/Visual</p>
-                  <p className="text-gray-400 text-sm mt-2">Replace with your image</p>
+                <div className="text-left p-4 pt-4">
+                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 ml-4 mt-4" />
+                  <p className="text-gray-500 font-medium ml-4 mt-2">Event Image/Visual</p>
+                  <p className="text-gray-400 text-sm ml-4">Replace with your image</p>
                 </div>
               </div>
             </div>
@@ -24,7 +24,7 @@ export default function EventDetailsSection() {
             {/* Center gap - empty space between image and content */}
             <div className="hidden lg:block lg:w-2/12"></div>
             
-            {/* Right side - event details content - right column */}
+            {/* Right side - event details content */}
             <div className="lg:w-5/12">
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-black mb-4 md:mb-5 leading-tight">
                 We&apos;re talking real, cold, 5K+ prize money for your creative team.
