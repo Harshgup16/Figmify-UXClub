@@ -2,6 +2,7 @@
 
 import CircularText from "@/components/circular_Text";
 import EvaluationCommittee from "@/components/EvaluationCommittee";
+import EventsSection from "@/components/EventsSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -88,6 +89,9 @@ export default function Home() {
             </button>
           </div>
         </div>
+      </div>
+      <div id="events-section">
+        <EventsSection />
       </div>
       <div id="committee-section">
         <EvaluationCommittee />
