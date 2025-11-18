@@ -2,8 +2,9 @@
 
 import CircularText from "@/components/circular_Text";
 import EvaluationCommittee from "@/components/EvaluationCommittee";
+import EventDetailsSection from "@/components/EventsSection";
 import Image from "next/image";
-
+import ScrollDown from '../components/ScrollDown';
 export default function Home() {
   const scrollToContent = () => {
     document.getElementById('content-section')?.scrollIntoView({ behavior: 'smooth' });
@@ -17,7 +18,7 @@ export default function Home() {
     <div className="min-h-screen">
       <div className="glow-box relative">
         
-        <div className="absolute top-4 left-4 md:top-8 md:left-8 z-50">
+        <div className="absolute top-3.5 left-1/2 -translate-x-1/2 md:top-8 md:left-8 md:translate-x-0 z-50">
           <h1 className="text-4xl md:text-6xl lg:text-8xl text-white font-bold">
             Design<span style={{ color: '#ff6b35' }}>2</span>code
           </h1>
@@ -45,6 +46,10 @@ export default function Home() {
           <Image src="/VITB Logo (1) 1.svg" alt="VITB Logo" width={100} height={100} className="md:w-[150px] md:h-[150px]" />
         </div>
       </div>
+
+      {/* <div className="relative -mt-16 z-[100] flex justify-center">
+        <ScrollDown />
+      </div> */}
 
       <div id="content-section" className="flex flex-col lg:flex-row lg:justify-between items-stretch">
         <div className="flex flex-col justify-center max-w-2xl px-4 py-6 md:px-8 md:py-8">
@@ -89,8 +94,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="committee-section">
-        <EvaluationCommittee />
+      <div id="events-section">
+        <EventDetailsSection />
       </div>
     </div>
   );
