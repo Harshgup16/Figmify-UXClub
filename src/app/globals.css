@@ -19,13 +19,22 @@
 
 
 .glow-box {
-  width: calc(100vw - 20px);
-  height: calc(100vh - 20px);
+  width: calc(100vw - 10px);
+  height: calc(100vh - 10px);
   margin: 5px;
   border-radius: 20px;
   /* background: #000000; */
   position: relative;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .glow-box {
+    width: calc(100vw - 10px);
+    height: calc(100vh - 10px);
+    margin: 5px;
+    border-radius: 15px;
+  }
 }
 
 .glow-box::before {

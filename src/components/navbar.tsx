@@ -353,7 +353,7 @@ const PillNav: React.FC<PillNavProps> = ({
                 <Link
                   href={item.href}
                   className={`mobile-menu-link${activeHref === item.href || currentPath === item.href ? ' is-active' : ''}`}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={toggleMobileMenu}
                 >
                   {item.label}
                 </Link>
@@ -361,7 +361,7 @@ const PillNav: React.FC<PillNavProps> = ({
                 <a
                   href={item.href}
                   className={`mobile-menu-link${activeHref === item.href || currentPath === item.href ? ' is-active' : ''}`}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={toggleMobileMenu}
                 >
                   {item.label}
                 </a>

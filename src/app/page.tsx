@@ -18,12 +18,12 @@ export default function Home() {
     <div className="min-h-screen">
       <div className="glow-box relative">
         
-        <div className="absolute top-3.5 left-1/2 -translate-x-1/2 md:top-8 md:left-8 md:translate-x-0 z-50">
+        <div className="absolute top-3.5 left-1/2 -translate-x-1/2 md:top-8 md:left-8 md:translate-x-0 z-50 px-4 md:px-0">
           <h1 className="text-4xl md:text-6xl lg:text-8xl text-white font-bold">
             Design<span style={{ color: '#ff6b35' }}>2</span>code
           </h1>
         </div>
-        <div className="absolute inset-0 flex items-center justify-center z-50">
+        <div className="absolute inset-0 flex items-center justify-center z-50 px-4">
           <div className="inline-flex rounded-full bg-black p-1 w-fit">
             <button className="bg-black text-white px-4 py-2 md:px-6 md:py-3 rounded-full text-base md:text-lg font-semibold">
               NPM INSTALL
@@ -34,8 +34,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute bottom-4 left-4 md:bottom-8 md:left-8 z-50 flex items-center gap-2 md:gap-4">
-          <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-white"></div>
+        <div className="absolute bottom-4 left-4 right-4 md:bottom-8 md:left-8 md:right-auto z-50 flex items-center gap-2 md:gap-4">
+          <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-white flex-shrink-0"></div>
           <div>
             <p className="text-white text-sm md:text-xl">Let's build & code</p>
             <p className="text-white text-sm md:text-xl">beautiful designs together.</p>
@@ -43,7 +43,7 @@ export default function Home() {
         </div>
 
         <div className="absolute bottom-4 right-4 md:bottom-8 md:right-8 z-50">
-          <Image src="/VITB Logo (1) 1.svg" alt="VITB Logo" width={100} height={100} className="md:w-[150px] md:h-[150px]" />
+          <Image src="/VITB Logo (1) 1.svg" alt="VITB Logo" width={80} height={80} className="md:w-[150px] md:h-[150px]" />
         </div>
       </div>
 
