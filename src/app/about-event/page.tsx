@@ -114,19 +114,19 @@ export default function AboutEventPage() {
             </div>
             <div className="space-y-3 md:space-y-4">
               <div className="flex gap-3 md:gap-4">
-                <div className="text-[#ff6b35] font-bold whitespace-nowrap text-sm md:text-base">9:00 AM</div>
+                <div className="text-[#ff6b35] font-bold whitespace-nowrap text-sm md:text-base w-20 md:w-24 flex-shrink-0">9:00 AM</div>
                 <div className="text-gray-700 text-sm md:text-base">Problem statement released via email</div>
               </div>
               <div className="flex gap-3 md:gap-4">
-                <div className="text-[#ff6b35] font-bold whitespace-nowrap text-sm md:text-base">Throughout</div>
+                <div className="text-[#ff6b35] font-bold whitespace-nowrap text-sm md:text-base w-20 md:w-24 flex-shrink-0">Throughout</div>
                 <div className="text-gray-700 text-sm md:text-base">Teams brainstorm, develop user flows, and create wireframes</div>
               </div>
               <div className="flex gap-3 md:gap-4">
-                <div className="text-[#ff6b35] font-bold whitespace-nowrap text-sm md:text-base">11:59 PM</div>
+                <div className="text-[#ff6b35] font-bold whitespace-nowrap text-sm md:text-base w-20 md:w-24 flex-shrink-0">11:59 PM</div>
                 <div className="text-gray-700 text-sm md:text-base">Deadline for wireframe submission (PDF/JPG/Figma link)</div>
               </div>
               <div className="flex gap-3 md:gap-4">
-                <div className="text-[#ff6b35] font-bold whitespace-nowrap text-sm md:text-base">24 Nov</div>
+                <div className="text-[#ff6b35] font-bold whitespace-nowrap text-sm md:text-base w-20 md:w-24 flex-shrink-0">24 Nov</div>
                 <div className="text-gray-700 text-sm md:text-base">Top 30 teams announced by 11:00 PM via email</div>
               </div>
             </div>
@@ -145,19 +145,19 @@ export default function AboutEventPage() {
             </div>
             <div className="space-y-3 md:space-y-4">
               <div className="flex gap-3 md:gap-4">
-                <div className="text-[#ff6b35] font-bold whitespace-nowrap text-sm md:text-base">1:00 PM</div>
+                <div className="text-[#ff6b35] font-bold whitespace-nowrap text-sm md:text-base w-20 md:w-24 flex-shrink-0">1:00 PM</div>
                 <div className="text-gray-700 text-sm md:text-base">Mandatory check-in for shortlisted teams</div>
               </div>
               <div className="flex gap-3 md:gap-4">
-                <div className="text-[#ff6b35] font-bold whitespace-nowrap text-sm md:text-base">1:30 PM</div>
+                <div className="text-[#ff6b35] font-bold whitespace-nowrap text-sm md:text-base w-20 md:w-24 flex-shrink-0">1:30 PM</div>
                 <div className="text-gray-700 text-sm md:text-base">Inaugural ceremony & event briefing</div>
               </div>
               <div className="flex gap-3 md:gap-4">
-                <div className="text-[#ff6b35] font-bold whitespace-nowrap text-sm md:text-base">2:00 PM</div>
+                <div className="text-[#ff6b35] font-bold whitespace-nowrap text-sm md:text-base w-20 md:w-24 flex-shrink-0">2:00 PM</div>
                 <div className="text-gray-700 text-sm md:text-base">Live evaluation begins - teams present their developed models</div>
               </div>
               <div className="flex gap-3 md:gap-4">
-                <div className="text-[#ff6b35] font-bold whitespace-nowrap text-sm md:text-base">3:20 PM</div>
+                <div className="text-[#ff6b35] font-bold whitespace-nowrap text-sm md:text-base w-20 md:w-24 flex-shrink-0">3:20 PM</div>
                 <div className="text-gray-700 text-sm md:text-base">Final demos, judging, and prize distribution</div>
               </div>
             </div>
@@ -248,9 +248,6 @@ export default function AboutEventPage() {
           <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-4 md:mb-6">
             Ready to Build Something Amazing?
           </h2>
-          <p className="text-base md:text-xl mb-6 md:mb-8 opacity-90">
-            Join 120+ teams in this epic 48-hour design-to-code journey
-          </p>
           <button className="bg-white text-black px-6 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-bold hover:bg-gray-100 transition-all inline-flex items-center gap-2">
             Register Your Team <span className="text-lg md:text-xl">→</span>
           </button>
