@@ -1,6 +1,14 @@
 "use client";
 
+import { useRouter } from 'next/navigation';
+
 export default function EventDetailsSection() {
+  const router = useRouter();
+
+  const handleNavigate = () => {
+    router.push('/about-event');
+  };
+
   return (
     <div className="bg-white py-8 md:py-10">
       {/* Full width container without side padding */}
@@ -56,7 +64,10 @@ export default function EventDetailsSection() {
                   </p>
                 </div>
 
-                <div className="border-2 border-black rounded-2xl p-4 bg-gray-100">
+                <div 
+                  onClick={handleNavigate}
+                  className="border-2 border-black rounded-2xl p-4 bg-gray-100 cursor-pointer hover:bg-gray-200 transition-colors"
+                >
                   <p className="text-black text-sm font-medium text-center">
                     Free entry →
                   </p>
@@ -71,7 +82,7 @@ export default function EventDetailsSection() {
 
                 <div className="border-2 border-black rounded-2xl p-4 bg-gray-100">
                   <p className="text-black text-sm font-medium text-center">
-                    See the 48-hour sprint plan &amp; rules →
+                    See the 48-hour sprint plan &amp; rules
                   </p>
                 </div>
               </div>

@@ -67,7 +67,7 @@ export default function Home() {
               NPM INSTALL
             </button>
             {/* <button className="bg-white text-black px-4 py-2 md:px-6 md:py-3 rounded-full text-base md:text-lg font-semibold flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer hover:bg-gray-100 transition-colors"> */}
-            <button className="bg-white text-black px-4 py-2 md:px-6 md:py-3 rounded-full text-base md:text-lg font-semibold flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-black px-4 py-2 md:px-6 md:py-3 rounded-full text-base md:text-lg font-semibold flex items-center justify-center gap-2">
               <span>DESIGN<span style={{color:'#ff6b35'}}>2</span>CODE</span> <span>→</span>
             </button>
           </div>

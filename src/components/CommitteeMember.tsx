@@ -1,18 +1,18 @@
 "use client";
-import { Mail, Linkedin } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 
 interface CommitteeMemberProps {
   name: string;
   role: string;
   imageUrl?: string;
-  contactType?: 'email' | 'linkedin';
+  linkedinUrl?: string;
 }
 
 export default function CommitteeMember({
   name,
   role,
   imageUrl,
-  contactType = 'email'
+  linkedinUrl
 }: CommitteeMemberProps) {
   return (
     <div className="group cursor-pointer">
@@ -43,14 +43,11 @@ export default function CommitteeMember({
           </div>
 
           <button
+            onClick={() => linkedinUrl && window.open(linkedinUrl, '_blank')}
             className="flex-shrink-0 p-2 hover:bg-blue-50 rounded-full transition-all duration-200 transform hover:scale-110 active:scale-95"
-            aria-label={contactType === 'email' ? 'Email' : 'LinkedIn'}
+            aria-label="LinkedIn"
           >
-            {contactType === 'email' ? (
-              <Mail className="w-4 h-4 text-blue-600" />
-            ) : (
-              <Linkedin className="w-4 h-4 text-blue-600" />
-            )}
+            <Linkedin className="w-4 h-4 text-blue-600" />
           </button>
         </div>
       </div>
