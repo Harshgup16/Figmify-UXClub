@@ -34,7 +34,7 @@ export default function EventDetailsSection() {
             
             {/* Right side - buttons and event details */}
             <div className="lg:w-5/12">
-              <div className="flex flex-wrap gap-2 mb-5 justify-center lg:justify-start">
+              <div className="flex flex-wrap gap-2 mb-5 justify-center">
                 <div className="inline-flex rounded-full bg-black p-1.5 md:p-2 w-fit max-w-full">
                   <button className="bg-black text-white px-3 py-1.5 md:px-5 md:py-2 lg:px-7 lg:py-3 rounded-full text-sm md:text-base lg:text-lg font-semibold">
                     NPM INSTALL
