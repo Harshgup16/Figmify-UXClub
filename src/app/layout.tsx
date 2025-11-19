@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className="antialiased" style={{ fontFamily: 'Inter, sans-serif' }}>
         <SmoothScroll>
           <PillNav
-            logo="/logo.svg"
+            logo="/ux design club 1.svg"
             logoAlt="Company Logo"
             items={[
               { label: 'Home', href: '/' },
